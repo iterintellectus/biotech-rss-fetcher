@@ -1,0 +1,119 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Biotech RSS PDFs</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1 { color: #333; }
+                    table { border-collapse: collapse; width: 100%; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    tr:nth-child(even) { background-color: #f2f2f2; }
+                    th { background-color: #4CAF50; color: white; }
+                    .search { margin-bottom: 20px; padding: 8px; width: 300px; }
+                    .notion-link { color: #0000EE; }
+                    .date { color: #666; }
+                </style>
+                <script>
+                    function searchTable() {
+                        const input = document.getElementById('searchInput');
+                        const filter = input.value.toLowerCase();
+                        const table = document.getElementById('pdfTable');
+                        const rows = table.getElementsByTagName('tr');
+                        
+                        for (let i = 1; i < rows.length; i++) {
+                            const titleCell = rows[i].getElementsByTagName('td')[0];
+                            if (titleCell) {
+                                const text = titleCell.textContent || titleCell.innerText;
+                                rows[i].style.display = text.toLowerCase().indexOf(filter) > -1 ? '' : 'none';
+                            }
+                        }
+                    }
+                </script>
+            </head>
+            <body>
+                <h1>Biotech RSS PDFs</h1>
+                <p>Last updated: 2025-03-05 20:04:37</p>
+                <input type="text" id="searchInput" class="search" onkeyup="searchTable()" placeholder="Search for titles...">
+                <table id="pdfTable">
+                    <tr>
+                        <th>Title</th>
+                        <th>Date</th>
+                        <th>PDF</th>
+                        <th>Notion Link</th>
+                    </tr>
+            
+                    <tr>
+                        <td>STAT Jazz Pharmaceuticals to acquire Chimerix and its experimental brain cancer drug</td>
+                        <td class="date">2025-03-05</td>
+                        <td><a href="STAT_Jazz_Pharmaceuticals_to_acquire_Chimerix_and_its_experimental_brain_cancer_drug_20250305190151.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>The Sustainability Balance in Bioprocessing</td>
+                        <td class="date">2025-03-05</td>
+                        <td><a href="The_Sustainability_Balance_in_Bioprocessing_20250305190121.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Protagonist says Takeda-partnered drug succeeds in rare blood cancer</td>
+                        <td class="date">2025-03-04</td>
+                        <td><a href="Protagonist_says_Takeda-partnered_drug_succeeds_in_rare_blood_cancer_20250304085340.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>CRISPR-based method enhances detection of antibiotic resistance in wastewater</td>
+                        <td class="date">2025-03-04</td>
+                        <td><a href="CRISPR-based_method_enhances_detection_of_antibiotic_resistance_in_wastewater_20250304085336.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Closed-loop enhancement of plant photosynthesis via biomass-derived carbon dots in biohybrids</td>
+                        <td class="date">2025-03-02</td>
+                        <td><a href="Closed-loop_enhancement_of_plant_photosynthesis_via_biomass-derived_carbon_dots_in_biohybrids_20250302163415.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Computer vision system tracks plant growth to guide specialty crop monitoring</td>
+                        <td class="date">2025-02-28</td>
+                        <td><a href="Computer_vision_system_tracks_plant_growth_to_guide_specialty_crop_monitoring_20250228091211.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Repurposing of apoptotic inducer drugs against Mycobacterium tuberculosis</td>
+                        <td class="date">2025-02-28</td>
+                        <td><a href="Repurposing_of_apoptotic_inducer_drugs_against_Mycobacterium_tuberculosis_20250228091156.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Rapid brain tumor classification from sparse epigenomic data</td>
+                        <td class="date">2025-02-28</td>
+                        <td><a href="Rapid_brain_tumor_classification_from_sparse_epigenomic_data_20250228091147.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>An ancient RNA-guided system could simplify delivery of gene editing therapies</td>
+                        <td class="date">2025-02-27</td>
+                        <td><a href="An_ancient_RNA-guided_system_could_simplify_delivery_of_gene_editing_therapies_20250227184136.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                    <tr>
+                        <td>From the tropics to the lab New yeasts could transform industry</td>
+                        <td class="date">2025-02-27</td>
+                        <td><a href="From_the_tropics_to_the_lab_New_yeasts_could_transform_industry_20250227110434.pdf" target="_blank">Open PDF</a></td>
+                        <td>No link</td>
+                    </tr>
+                
+                </table>
+            </body>
+            </html>
+            
