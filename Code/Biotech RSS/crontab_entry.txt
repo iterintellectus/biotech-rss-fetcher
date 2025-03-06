@@ -1,0 +1,6 @@
+# Biotech RSS fetcher
+# Run every morning at 6 AM
+0 6 * * * /Users/vittoriomottini/Documents/Bio-Acc/Code/Biotech\ RSS/run_biotech_rss.sh >> /Users/vittoriomottini/Documents/Bio-Acc/Code/Biotech\ RSS/cron_log.txt 2>&1
+
+# Run every afternoon at 1 PM
+0 13 * * * /Users/vittoriomottini/Documents/Bio-Acc/Code/Biotech\ RSS/run_biotech_rss.sh >> /Users/vittoriomottini/Documents/Bio-Acc/Code/Biotech\ RSS/cron_log.txt 2>&1 
